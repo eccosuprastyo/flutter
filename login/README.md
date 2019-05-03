@@ -1,16 +1,6 @@
-# login
+LOGIN EXAMAMPLE CONNECT DATABASE SQLITE
 
-A new Flutter project.
+This project with Scalable app structure. You can use this project structure for other application.
+File database show in folder login/data/flutter.db, you can try edit the database for try this application.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+![Login UI Flutter](https://raw.githubusercontent.com/eccosuprastyo/flutter/master/login/ui-login.png)
