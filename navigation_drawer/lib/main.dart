@@ -32,12 +32,18 @@ class MyHomePage extends StatelessWidget {
           // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
           children: <Widget>[
-            DrawerHeader(
-              child: Text(
-                'Drawer Header',
-                style: TextStyle(color: Colors.white, fontSize: 22),),
-              decoration: BoxDecoration(
-                color: Colors.lightBlue[300],
+            UserAccountsDrawerHeader(
+              accountName: Text("camellabs.com"),
+              accountEmail: Text('admin@camellabs.com'),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor:
+                    Theme.of(context).platform == TargetPlatform.iOS
+                        ? Colors.blue
+                        : Colors.white,
+                child: Text(
+                  "C",
+                  style: TextStyle(fontSize: 40.0),
+                ),
               ),
             ),
             ListTile(
