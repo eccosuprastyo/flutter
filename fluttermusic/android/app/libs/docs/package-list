@@ -1,0 +1,9 @@
+com.deezer.sdk.model
+com.deezer.sdk.network.connect
+com.deezer.sdk.network.connect.event
+com.deezer.sdk.network.request
+com.deezer.sdk.network.request.event
+com.deezer.sdk.player
+com.deezer.sdk.player.event
+com.deezer.sdk.player.exception
+com.deezer.sdk.player.networkcheck

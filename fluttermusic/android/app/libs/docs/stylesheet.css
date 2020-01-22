@@ -1,0 +1,424 @@
+/*!
+ * Deezer SDK for Android Javadoc CSS
+ *
+ * Copyright 2014 Deezer
+ */
+ 
+ /* RESET */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+audio,
+canvas,
+video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+audio:not([controls]) {
+	display: none;
+}
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
+/** SELECTION */
+::selection {
+  background-color: #0099cc;
+  color: #fff; }
+::-webkit-selection {
+  background-color: #0099cc;
+  color: #fff; }
+::-moz-selection {
+  background-color: #0099cc;
+  color: #fff; }
+
+/** MAIN */
+
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	color: #666666;
+	background-color: #ffffff;
+}
+
+a {
+	color: #3995cd;
+	text-decoration: none;
+}
+a:hover {
+	color: #256a94;
+	text-decoration: underline;
+}
+
+.bar h3 a {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 12px;
+	padding-left: 12px;
+	margin-top: 2px;
+	margin-bottom: 2px;	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+h1 a:hover, 
+h2 a:hover, 
+h3 a:hover, 
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+	text-decoration: none;
+	background-color: #eeeeee;
+}
+
+/** TITLES */
+p {
+	margin: 0 0 9px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+}
+p small {
+	font-size: 10px;
+	color: #999999;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 10px 0 0 10px;
+	font-weight: bold;
+	color: #666666;
+	text-rendering: optimizelegibility;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+	font-weight: normal;
+	color: #999999;
+}
+h1 {
+	font-size: 26px;
+	line-height: 36px;
+}
+h1 small {
+	font-size: 22px;
+}
+h2 {
+	font-size: 20px;
+	line-height: 36px;
+}
+h2 small {
+	font-size: 20px;
+}
+h3 {
+	line-height: 27px;
+	font-size: 18px;
+}
+h3 small {
+	font-size: 14px;
+}
+h4,
+h5,
+h6 {
+	line-height: 18px;
+}
+h4 {
+	font-size: 14px;
+}
+h4 small {
+	font-size: 12px;
+}
+h5 {
+	font-size: 12px;
+}
+h6 {
+	font-size: 11px;
+	color: #999999;
+	text-transform: uppercase;
+}
+
+/** CODE */
+code  {
+	font-family: Menlo, Monaco, "Courier New", monospace;
+	padding: 3px 4px;
+	color: #d14;
+}
+
+.description .block pre {
+	display: block;
+	font-size: 12px;
+	line-height: 18px;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+/*
+code,
+pre {
+	padding: 0 3px 2px;
+	font-family: Menlo, Monaco, "Courier New", monospace;
+	font-size: 11px;
+	color: #666666;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+code {
+	padding: 3px 4px;
+	color: #d14;
+	background-color: #f7f7f9;
+	border: 1px solid #e1e1e8;
+}
+pre {
+	display: block;
+	padding: 8.5px;
+	margin: 0 0 9px;
+	font-size: 12px;
+	line-height: 18px;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-break: break-all;
+	word-wrap: break-word;
+}*/
+
+/** NAVIGATION */
+.indexHeader  {
+	min-height: 20px;
+	padding: 14px;
+	margin: 8px;
+	background-color: #f5f5f5;
+	border: 1px solid #eee;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.indexContainer {
+	min-height: 20px;
+	padding: 14px;
+	margin: 8px;
+	background-color: #f5f5f5;
+	border: 1px solid #eee;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.indexContainer ul{
+	margin: 0;
+	padding: 0;
+}
+
+.indexContainer ul li {
+	list-style-type: none;
+	line-height: 18px;
+}
+
+.indexContainer ul li a{
+	display: block;
+}
+.indexContainer ul li:hover{
+	background-color: #eeeeee;
+}
+.indexContainer ul li a:hover{
+	text-decoration: none;	
+}
+
+.bar {
+	font-size: 1.25em;
+}
+
+.subNav, .bottomNav {
+	display: none; 
+}
+
+.topNav {
+	background-color: #3a3a3a;
+	margin-bottom: 18px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.topNav ul {
+	width: 780px;
+	height: 41px;
+	margin-top: 0; 
+	margin-bottom: 0; 
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 160px;
+	background-image:url('resources/logo-deezer-dev.png');
+	background-repeat: no-repeat; 
+}
+
+.topNav ul li{
+	display: inline-block;
+	margin: 8px;	
+	line-height: 14px;
+}
+
+.topNav ul li a{
+	float: none;
+	padding: 10px 10px 11px;
+	line-height: 20px;
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.topNav ul li a:hover{
+}
+
+/** HEADER */
+.header {
+	clear: both; 
+	width: 940px;
+	margin-top: 0; 
+	margin-bottom: 0; 
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px 0 0 0 ; 
+}
+
+/** CONTENT */
+.contentContainer, .classUseContainer {
+	clear: both;
+	width: 940px;
+	margin-top: 0; 
+	margin-bottom: 0; 
+	margin-left: auto;
+	margin-right: auto;
+}
+.block {
+	margin: 4px;
+	padding-left: 10px;
+}
+.strong {
+	font-weight: bold;
+}
+.header .subTitle {
+	font-size: 16px;
+	margin: 10px 0 0 10px;
+}
+
+.description, .summary, .details {
+	padding: 0 10px;
+}
+
+ul.blockList, ul.blockListLast {
+	padding: 0;
+	margin-left: 4px
+}
+ul.blockList li.blockList, ul.blockListLast li.blockList {
+	list-style: none;
+	margin-bottom: 25px;
+
+}
+
+ul.inheritance li {
+	display: inline;
+	list-style: none;
+}
+ul.inheritance:first-child:before {
+	content:"\21b3";
+}
+
+dl {
+	margin: 10px 20px;
+}
+
+.description {
+	padding-left: 30px;
+	margin-bottom: 18px;
+	font-size: 13px;
+	font-weight: 200;
+	line-height: 27px;
+}
+
+.details ul.blockList li.blockList ul.blockList li.blockList ul.blockList li.blockList h4,
+.details ul.blockList li.blockList ul.blockList li.blockList ul.blockListLast li.blockList h4{
+    display: none; 
+}
+.details ul.blockList li.blockList ul.blockList li.blockList ul.blockList li.blockList pre,
+.details ul.blockList li.blockList ul.blockList li.blockList ul.blockListLast li.blockList pre{
+	background-color: #DAF0FF;
+	color: #0F71B7; 
+	border: solid 1px #DDD;
+	text-align: left; 
+	font-size: 14px;
+	font-weight: bold; 
+	padding: 8px;
+}
+
+/** TABLES */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 0;
+	width: 100%;
+}
+
+table.overviewSummary{
+	margin: 10px 20px;
+}
+
+td, th {
+	border: solid 1px #DDD;
+	text-align: left; 
+}
+td {
+	padding: 8px;
+}
+tr:nth-child(odd) td {
+	background-color: #F6F6F6;
+}
+th {
+	background-color: #DAF0FF;
+	color: #0F71B7;
+	text-transform: uppercase;
+}
+table caption{
+	display: none;
+}
