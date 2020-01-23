@@ -119,15 +119,23 @@ class SearchWidgetState extends State<SearchWidget>
                   if (snapshot.hasData &&
                       snapshot.connectionState != ConnectionState.waiting) {
                     final searchResult = snapshot.data;
-                    
+
                     List<Song> songs = searchResult.songs;
-                    if (songs.length > 3) {
-                      songs = songs.sublist(0, 10);
+                    if (songs.length >= 5) {
+                      songs = songs.sublist(0, 5);
+                    }
+
+                    if (songs.length > 0 && songs.length < 5) {
+                      songs = songs.sublist(0, songs.length);
                     }
 
                     List<Album>  albums = searchResult.albums;
-                    if (albums.length > 3) {
-                      albums = albums.sublist(0, 10);
+                    if (albums.length >= 5) {
+                      albums = albums.sublist(0, 5);
+                    }
+
+                    if (albums.length > 0 && albums.length < 5) {
+                      albums = albums.sublist(0, albums.length);
                     }
 
                     List<Artist> artists = searchResult.artists;
